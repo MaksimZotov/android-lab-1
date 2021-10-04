@@ -1,27 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
         android:background="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintDimensionRatio="1:1"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintEnd_toEndOf="parent">
 
         <Button
             android:id="@+id/view_1"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@color/purple_200"
-            app:layout_constraintHorizontal_weight="2"
-            app:layout_constraintVertical_weight="1"
-            app:layout_constraintBottom_toTopOf="@id/view_2"
-            app:layout_constraintEnd_toStartOf="@id/view_3"
+            app:layout_constraintDimensionRatio="2:1"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/view_6" />
 
@@ -30,23 +27,20 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@color/purple_500"
-            app:layout_constraintHorizontal_weight="2"
-            app:layout_constraintVertical_weight="1"
-            app:layout_constraintBottom_toTopOf="@id/view_4"
+            app:layout_constraintDimensionRatio="2:1"
+            app:layout_constraintTop_toBottomOf="@id/view_3"
             app:layout_constraintEnd_toStartOf="@id/view_5"
             app:layout_constraintStart_toStartOf="@id/view_3"
-            app:layout_constraintTop_toBottomOf="@id/view_3" />
+            app:layout_constraintBottom_toTopOf="@id/view_4" />
 
         <ImageView
             android:id="@+id/view_3"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@color/teal_200"
-            app:layout_constraintHorizontal_weight="2"
-            app:layout_constraintVertical_weight="1"
-            app:layout_constraintBottom_toTopOf="@id/view_2"
-            app:layout_constraintEnd_toStartOf="@id/view_5"
+            app:layout_constraintDimensionRatio="2:1"
             app:layout_constraintStart_toEndOf="@id/view_1"
+            app:layout_constraintEnd_toStartOf="@id/view_5"
             app:layout_constraintTop_toBottomOf="@id/view_6" />
 
         <ImageButton
@@ -54,23 +48,19 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@color/teal_700"
-            app:layout_constraintHorizontal_weight="2"
-            app:layout_constraintVertical_weight="1"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/view_2"
+            app:layout_constraintDimensionRatio="2:1"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/view_2" />
+            app:layout_constraintEnd_toStartOf="@id/view_2"
+            app:layout_constraintTop_toBottomOf="@id/view_2"
+            app:layout_constraintBottom_toBottomOf="parent" />
 
         <EditText
             android:id="@+id/view_5"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@color/purple_200"
-            app:layout_constraintHorizontal_weight="1"
-            app:layout_constraintVertical_weight="2"
-            app:layout_constraintBottom_toTopOf="@id/view_4"
+            app:layout_constraintDimensionRatio="1:2"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/view_3"
             app:layout_constraintTop_toBottomOf="@id/view_6" />
 
         <ProgressBar
@@ -78,18 +68,10 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:background="@color/purple_700"
-            app:layout_constraintVertical_weight="2"
-            app:layout_constraintBottom_toTopOf="@id/view_3"
-            app:layout_constraintEnd_toEndOf="@id/view_3"
-            app:layout_constraintStart_toStartOf="@id/guideline"
+            app:layout_constraintDimensionRatio="1:2"
+            app:layout_constraintBottom_toTopOf="@id/view_5"
+            app:layout_constraintEnd_toStartOf="@id/view_5"
             app:layout_constraintTop_toTopOf="parent" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/guideline"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.6" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
